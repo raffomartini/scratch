@@ -6,11 +6,13 @@ from email.message import EmailMessage
 # from email.headerregistry import Address
 from email.utils import make_msgid
 
+SMTP_SERVER = 'insert smtp server FQDN or IP'
+
 IMG = 'jon_snow.jpg'
-TO_ADDR = 'mabarber'
-FROM_ADDR = 'JON SNOW <jonsnow@cisco.com>'
-BCC_ADDR = 'raffaello.martini@gmail.com'
-REPLY_TO_ADDRESS = 'Jon Snow <knowsnothing@cisco.com>'
+TO_ADDR = 'ariastark@fiasco.com'
+FROM_ADDR = 'JON SNOW <jonsnow@fiasco.com>'
+BCC_ADDR = 'Daenerys.Targaryen@gmail.com'
+REPLY_TO_ADDRESS = 'Jon Snow <knowsnothing@fiasco.com>'
 
 # Create the base text message.
 msg = EmailMessage()
@@ -46,5 +48,5 @@ with open(IMG, 'rb') as img:
     msg.get_payload()[1].add_related(img.read(), 'image', 'jpeg', cid=meme_cid)
 
 # Send the message via local SMTP server.
-with smtplib.SMTP('outbound.cisco.com', 25) as s:
+with smtplib.SMTP(SMTP_SERVER, 25) as s:
     s.send_message(msg)

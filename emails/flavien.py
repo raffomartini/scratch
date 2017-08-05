@@ -1,7 +1,16 @@
-FROM_ADDR = 'Flavien Richard <frichard@cisco.com>'
-TO_ADDR = 'ctermini@cisco.com'
-BCC_ADDR = 'group.crobbins@cisco.com'
-REPLY_TO_ADDRESS = 'Flavien Richard <group.crobbins@cisco.com>'
+# Python 2.7.1
+
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
+from email.mime.multipart import MIMEMultipart
+
+SMTP_SERVER = 'insert smtp server FQDN or IP'
+
+FROM_ADDR = 'Flavien Richard <frichard@fiasco.com>'
+TO_ADDR = 'carcluccio@fiasco.com'
+BCC_ADDR = 'large-group@fiasco.com'
+REPLY_TO_ADDRESS = 'Flavien Richard <large-group@fiasco.com>'
 SUBJECT = "Re: UNSUSCRIBE ME! R: Re: ping"
 
 TEXT = '''\
@@ -20,6 +29,6 @@ msg.add_header('reply-to', REPLY_TO_ADDRESS)
 
 msg.attach(part1)
 
-s = smtplib.SMTP('outbound.cisco.com', 25)
+s = smtplib.SMTP(SMTP_SERVER, 25)
 s.sendmail(FROM_ADDR, TO_ADDR, msg.as_string())
 s.quit()

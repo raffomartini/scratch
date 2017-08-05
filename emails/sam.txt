@@ -1,12 +1,12 @@
-telnet outbound.cisco.com 25
+telnet outbound.fiasco.com 25
 
 
-HELO cisco.com
+HELO fiasco.com
 
 
-MAIL FROM:sacorrei@cisco.com
+MAIL FROM:sam@fiasco.com
 
-RCPT TO:rmartini@cisco.com
+RCPT TO:frodo@fiasco.com
 
 
 DATA
@@ -14,10 +14,10 @@ DATA
 
 Content-Type: text/plain; charset=us-ascii
 Content-Transfer-Encoding: 7bit
-From: Samuel Ribeiro <sacorrei@cisco.com>
-Reply-To: ww-sales <ww-sales@cisco.com>, Employee Communications <employee-communications@cisco.com>, "prd-ccw-services-sub-readonly(mailer list)" <prd-ccw-services-sub-readonly@cisco.com>, ww-se-all <ww-se-all@cisco.com>
+From: Samuel Ribeiro <sam@fiasco.com>
+Reply-To: Frodo <large-group@fiasco.com>
 Subject: Re: Unsuscrive me
-To: "prd-ccw-services-sub-readonly(mailer list)" <prd-ccw-services-sub-readonly@cisco.com>
+To: "Frodo" <frodo@fiasco.com>
 
 Unsuscribe me too!
 

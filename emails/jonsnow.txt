@@ -1,16 +1,16 @@
-telnet outbound.cisco.com 25
+telnet outbound.fiasco.com 25
 
-HELO cisco.com
+HELO fiasco.com
 
-MAIL FROM:mvadrucc@cisco.com
+MAIL FROM:jonsnow@fiasco.com
 
-RCPT TO:rmartini@cisco.com
+RCPT TO:ariastark@fiasco.com
 
 DATA
 
-From: Marco Vadrucci <mvadrucc@cisco.com>
-To: ww-sales <ww-sales@cisco.com>, Employee Communications <employee-communications@cisco.com>, "prd-ccw-services-sub-readonly(mailer list)" <prd-ccw-services-sub-readonly@cisco.com>, ww-se-all <ww-se-all@cisco.com>
-Reply-To: ww-sales <ww-sales@cisco.com>, Employee Communications <employee-communications@cisco.com>, "prd-ccw-services-sub-readonly(mailer list)" <prd-ccw-services-sub-readonly@cisco.com>, ww-se-all <ww-se-all@cisco.com>
+From: Marco Vadrucci <jonswnow@fiasco.com>
+To: large-group <large-group@fiasco.com>
+Reply-To: large-group <large-group@fiasco.com>, larger-group <larger-group@fiasco.com>
 Subject: Re: Unsubscribe me
 Content-type:multipart/mixed; boundary="boundary1"
 --boundary1
@@ -534,3 +534,5 @@ X2+p4IxTTyFwcrnJ5rZ0jw/q+vtONItEuvLAM264jj25zj77DPQ9Ola8nw08ax+Xv0bYZAGj3X0C
 
 --boundary2--
 --boundary1--
+
+Note: the image is saved as base64
