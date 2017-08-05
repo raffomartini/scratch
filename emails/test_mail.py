@@ -20,15 +20,15 @@ IMG = 'jon_snow.jpg'
 # Create the container (outer) email message.
 msg = MIMEMultipart()
 msg['Subject'] = 'Test python'
-from_address = 'jsnow@cisco.com'
-to_address = 'raffaello.martini@gmail.com'
-bcc_address = 'martini@cisco.com'
-REPLY_TO_ADDRESS = 'knowsnothing@cisco.com'
+TO_ADDR = 'rmartini@cisco.com'
+FROM_ADDR = 'jonsnow@cisco.com'
+BCC_ADDR = 'martini@cisco.com'
+REPLY_TO_ADDRESS = 'Jon Snow <knowsnothing@cisco.com>'
 
-msg['From'] = from_address
+msg['From'] = FROM_ADDR
 # msg['To'] = COMMASPACE.join(family)
-msg['To'] = to_address
-msg['Bcc'] = bcc_address
+msg['To'] = TO_ADDR
+msg['Bcc'] = BCC_ADDR
 msg.add_header('reply-to', REPLY_TO_ADDRESS)
 msg.preamble = 'Test'
 body =  MIMEText('This is a test')

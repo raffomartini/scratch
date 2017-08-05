@@ -1,0 +1,32 @@
+telnet outbound.cisco.com 25
+
+
+HELO cisco.com
+
+
+MAIL FROM:sacorrei@cisco.com
+
+RCPT TO:rmartini@cisco.com
+
+
+DATA
+
+
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+From: Samuel Ribeiro <sacorrei@cisco.com>
+Reply-To: ww-sales <ww-sales@cisco.com>, Employee Communications <employee-communications@cisco.com>, "prd-ccw-services-sub-readonly(mailer list)" <prd-ccw-services-sub-readonly@cisco.com>, ww-se-all <ww-se-all@cisco.com>
+Subject: Re: Unsuscrive me
+To: "prd-ccw-services-sub-readonly(mailer list)" <prd-ccw-services-sub-readonly@cisco.com>
+
+Unsuscribe me too!
+
+> Can you please unsubscribe me from this distribution list?
+>
+>
+> Thank you by heart
+> 
+> 
+> R.
+> --
+> Keep strong the momentum!

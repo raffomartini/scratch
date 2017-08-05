@@ -1,0 +1,25 @@
+telnet outbound.cisco.com 25
+
+
+HELO cisco.com
+
+
+MAIL FROM:pamattei@cisco.com
+
+RCPT TO:employee-communications@cisco.com
+RCPT TO:prd-ccw-services-sub-readonly@cisco.com
+RCPT TO:ww-se-all@cisco.com
+RCPT TO:ww-sales@cisco.com
+RCPT TO:ww-se-all@cisco.com
+
+
+DATA
+
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+From: Paul Mattei <pamattei@cisco.com>
+To: ww-sales <ww-sales@cisco.com>, Employee Communications <employee-communications@cisco.com>, "prd-ccw-services-sub-readonly(mailer list)" <prd-ccw-services-sub-readonly@cisco.com>, ww-se-all <ww-se-all@cisco.com>
+Reply-To: ww-sales <ww-sales@cisco.com>, Employee Communications <employee-communications@cisco.com>, "prd-ccw-services-sub-readonly(mailer list)" <prd-ccw-services-sub-readonly@cisco.com>, ww-se-all <ww-se-all@cisco.com>
+Subject: Re: Unsubscribe me
+
+I want out as well!
